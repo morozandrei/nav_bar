@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Navbar with SEARCH</title>
+    <style>
+        body {
+            background-color: #222;
+            font-size: 23px;
+            font-family: arial;
+            margin: 0;
+        }
+        header {
+            background-color: #444;
+            padding: 20px;
+            height: 40px;
+        }
+        nav {
+            float: right;
+            margin-top: 8px;
+
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        form {
+            float: left;
+        }
+        /* label {
+            font-size: 18px;
+            display: block;
+            color: white; 
+            padding: 0 10px 10px 0; 
+        } */
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            width: 90px;
+            transition: 0.3s;
+        }
+        input:focus {
+            width: 300px;
+        }
+        button {
+            padding: 10px;
+            background-color: orange;
+            border-radius: 5px;
+            outline: none;
+        }
+        form::after {
+            content: "\2771 ";
+            color:#777;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <form action="">
+            <!-- some experiments with 'label' element -->
+            <!-- <label for="name">Search Field</label> -->
+            <input type="text" id="name" placeholder="search here...">
+            <button type="button">GO</button>
+        </form>
+        <nav>
+            <a href="">Our Team</a>
+            <a href="">Subscribe</a>
+            <a href="">Contacts</a>
+        </nav>
+    </header>
+    
+</body>
+</html>
